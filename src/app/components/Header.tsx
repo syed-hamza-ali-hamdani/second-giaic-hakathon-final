@@ -1,5 +1,6 @@
 "use client";
 import { CiSearch } from "react-icons/ci";
+import Link from "next/link";
 import { CiHeart } from "react-icons/ci";
 import { FaShoppingBag } from "react-icons/fa";
 export default function Header() {
@@ -14,17 +15,17 @@ export default function Header() {
         </div>
 
         {/* Navigation Links */}
-        <nav className="flex space-x-6">
-          {["New & Featuer", "Men", "Women", "Kids", "Sale", "SNKRS"].map((link) => (
-            <a
-              key={link}
-              href="#"
-              className="text-gray-700 hover:text-blue-600 font-medium"
-            >
-              {link}
-            </a>
-          ))}
-        </nav>
+<nav className="flex space-x-6">
+  {["New & Feature", "Men", "Women", "Kids", "Sale", "SNKRS"].map((link) => (
+    <Link
+      key={link}
+      href="/all-product"
+      className="text-gray-700 hover:text-blue-600 font-medium"
+    >
+      {link}
+    </Link>
+  ))}
+</nav>
 
         {/* Search Bar & Placeholder Icons */}
         <div className="flex items-center space-x-4">

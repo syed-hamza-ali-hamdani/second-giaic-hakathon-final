@@ -1,5 +1,6 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/image"; 
+import Link from "next/link";
 import { CiShoppingCart } from "react-icons/ci";
 
 export default function ProductDetails() {
@@ -30,7 +31,9 @@ export default function ProductDetails() {
         <p className="text-lg font-bold text-gray-900 mb-4">Rate: $100</p>
         <button className="flex items-center justify-center bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800 transition duration-300">
           <CiShoppingCart className="w-6 h-6 mr-2" />
+          <Link href="./product-cart">
           Add to Cart
+          </Link>
         </button>
       </div>
     </div>

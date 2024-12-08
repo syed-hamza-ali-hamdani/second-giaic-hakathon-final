@@ -83,7 +83,7 @@ export default function Home() {
       <div className="w-full max-w-[432px] mx-auto mt-6">
         {/* Product Image */}
         <Image
-          src="/nikeshoeproduct.jpg"
+          src="/Rectangle.png"
           alt="Nike Shoe Product"
           className="w-full h-auto rounded-md object-cover"
           width={432}

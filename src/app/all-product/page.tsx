@@ -68,33 +68,36 @@ export default function AllProducts() {
         </div>
 
         {/* Product Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {Array.from({ length: 36 }).map((_, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center text-center"
-            >
-              {/* Placeholder for Product Image */}
-              <div className="h-40 w-full bg-gray-200 rounded mb-4"> <img src="./Rectanglee.png" alt="pic" /></div>
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  {Array.from({ length: 36 }).map((_, index) => (
+    <a 
+      key={index} 
+      href="/product-details"
+      className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center text-center transition transform hover:scale-105"
+    >
+      {/* Placeholder for Product Image */}
+      <div className="h-40 w-full bg-gray-200 rounded mb-4">
+        <img src="./Rectanglee.png" alt="Product" className="w-full h-full object-cover" />
+      </div>
 
-              {/* Just In */}
-              <span className="text-sm text-brown-500 font-medium mb-2">Just In</span>
+      {/* Just In */}
+      <span className="text-sm text-brown-500 font-medium mb-2">Just In</span>
 
-              {/* Product Name */}
-              <h1 className="text-lg font-semibold mb-2">Product Name</h1>
+      {/* Product Name */}
+      <h1 className="text-lg font-semibold mb-2">Product Name</h1>
 
-              {/* Product Category */}
-              <span className="text-sm text-gray-500 mb-2">Men's Shoes</span>
+      {/* Product Category */}
+      <span className="text-sm text-gray-500 mb-2">Men's Shoes</span>
 
-              {/* Color */}
-              <span className="text-sm text-gray-600 mb-2">Color: 1</span>
+      {/* Color */}
+      <span className="text-sm text-gray-600 mb-2">Color: 1</span>
 
-              {/* Price */}
-              <span className="text-lg font-bold text-gray-800">$100</span>
-            </div>
-          ))}
-          
-        </div>
+      {/* Price */}
+      <span className="text-lg font-bold text-gray-800">$100</span>
+    </a>
+  ))}
+</div>
+
       </main>
     </div>
   );
