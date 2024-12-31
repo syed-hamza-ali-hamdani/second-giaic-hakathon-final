@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image"; 
+import Image from "next/image";
 import Link from "next/link";
 import { CiShoppingCart } from "react-icons/ci";
 
@@ -23,8 +23,8 @@ export default function ProductDetails() {
           Nike Air Force 1 PLT.AF.ORM
         </h2>
         <p className="text-sm text-gray-600 mb-4 leading-relaxed">
-          Turn style on its head with this crafted take on the Air Jordan 1
-          Mid. Its "inside out"-inspired construction, including unique layering
+          Turn style on its head with this crafted take on the Air Jordan 1 Mid.
+          Its &quot;inside out&quot;-inspired construction, including unique layering
           and exposed foam accents, ups the ante on this timeless Jordan Brand
           silhouette.
         </p>
@@ -32,7 +32,7 @@ export default function ProductDetails() {
         <button className="flex items-center justify-center bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800 transition duration-300">
           <CiShoppingCart className="w-6 h-6 mr-2" />
           <Link href="./product-cart">
-          Add to Cart
+            Add to Cart
           </Link>
         </button>
       </div>

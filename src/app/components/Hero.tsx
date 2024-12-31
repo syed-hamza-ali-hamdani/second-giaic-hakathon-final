@@ -76,7 +76,7 @@ export default function Hero() {
             />
             <div className="mt-4">
               <h3 className="font-medium text-lg pl-11">Nike Air Max Pulse</h3>
-              <p className="text-gray-500 text-sm pl-11">Women's Shoes</p>
+              <p className="text-gray-500 text-sm pl-11">Women &quot;s Shoes</p>
               <p className="font-bold mt-1 pl-11">₹ 13,995</p>
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function Hero() {
             />
             <div className="mt-4">
               <h3 className="font-medium text-lg pl-11">Nike Air Max Pulse</h3>
-              <p className="text-gray-500 text-sm pl-11">Men's Shoes</p>
+              <p className="text-gray-500 text-sm pl-11">Men &quot; s Shoes</p>
               <p className="font-bold mt-1 pl-11">₹ 13,995</p>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function Hero() {
             />
             <div className="mt-4">
               <h3 className="font-medium text-lg pl-11">Nike Air Max 97 SE</h3>
-              <p className="text-gray-500 text-sm pl-11">Men's Shoes</p>
+              <p className="text-gray-500 text-sm pl-11">Men &quot; s Shoes</p>
               <p className="font-bold mt-1 pl-11">₹ 16,995</p>
             </div>
           </div>
@@ -244,7 +244,7 @@ export default function Hero() {
         className="object-contain rounded-md"
       />
       <h3 className="text-lg font-semibold mt-4">Nike Air Max Pulse</h3>
-      <p className="text-sm text-gray-600">Men's Shoes</p>
+      <p className="text-sm text-gray-600">Men &quot; s Shoes</p>
       <p className="text-lg font-bold mt-2">₹ 13,995</p>
     </div>
 
@@ -258,7 +258,7 @@ export default function Hero() {
         className="object-contain rounded-md"
       />
       <h3 className="text-lg font-semibold mt-4">Nike Air Max 97 SE</h3>
-      <p className="text-sm text-gray-600">Women's Shoes</p>
+      <p className="text-sm text-gray-600">Women &quot; s Shoes</p>
       <p className="text-lg font-bold mt-2">₹ 16,995</p>
     </div>
 
@@ -272,7 +272,7 @@ export default function Hero() {
         className="object-contain rounded-md"
       />
       <h3 className="text-lg font-semibold mt-4">Nike Air Max 270</h3>
-      <p className="text-sm text-gray-600">Kids' Shoes</p>
+      <p className="text-sm text-gray-600">Kids &quot; Shoes</p>
       <p className="text-lg font-bold mt-2">₹ 12,995</p>
     </div>
   </div>
@@ -313,12 +313,12 @@ export default function Hero() {
     </div>
     {/* Column 4 */}
     <div className="text-center">
-      <h3 className="font-bold mb-4">Kids'</h3>
+      <h3 className="font-bold mb-4">Kid&quot;s</h3>
       <ul className="space-y-2 text-sm">
         <li>Infant & Toddler Shoes</li>
-        <li>Kids' Shoes</li>
-        <li>Kids' Jordan Shoes</li>
-        <li>Kids' Basketball Shoes</li>
+        <li>Kids &quot; Shoes</li>
+        <li>Kids &quot; Jordan Shoes</li>
+        <li>Kids &quot; Basketball Shoes</li>
       </ul>
     </div>
   </div>
