@@ -10,7 +10,7 @@ export default function ProductDetails() {
       <div className="relative flex items-center justify-center w-full lg:w-1/3">
         <Image
           src="/Rectangle.png"
-          alt="Logo"
+          alt="Nike Air Force 1 PLT.AF.ORM Shoes"
           className="w-full h-auto object-cover"
           width={300}
           height={300}
@@ -29,12 +29,14 @@ export default function ProductDetails() {
           silhouette.
         </p>
         <p className="text-lg font-bold text-gray-900 mb-4">Rate: $100</p>
-        <button className="flex items-center justify-center bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800 transition duration-300">
-          <CiShoppingCart className="w-6 h-6 mr-2" />
-          <Link href="./product-cart">
+        
+        {/* Button inside Link for navigation */}
+        <Link href="./product-cart">
+          <button className="flex items-center justify-center bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800 transition duration-300">
+            <CiShoppingCart className="w-6 h-6 mr-2" />
             Add to Cart
-          </Link>
-        </button>
+          </button>
+        </Link>
       </div>
     </div>
   );

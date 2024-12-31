@@ -7,7 +7,7 @@ export default function ContactUs() {
       <h1 className="text-3xl font-bold text-gray-700 mb-6 text-center">Contact Us</h1>
 
       {/* Search Section */}
-      <div className="relative w-96 mx-auto mb-10">
+      <div className="relative w-full max-w-md mx-auto mb-10">
         <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">
           <CiMobile1 />
         </div>
@@ -19,9 +19,9 @@ export default function ContactUs() {
       </div>
 
       {/* Main Content Area */}
-      <div className="flex w-full mt-4">
+      <div className="flex flex-col lg:flex-row w-full mt-4">
         {/* Left Section 60% */}
-        <div className="w-3/5 bg-white py-8 px-10 border-r border-gray-300">
+        <div className="lg:w-3/5 bg-white py-8 px-10 border-r border-gray-300">
           {/* Intro Heading */}
           <h1 className="text-2xl font-bold text-gray-700 mb-4">Welcome to Our Help Center</h1>
           <p className="text-gray-600 mb-6 leading-relaxed">
@@ -78,7 +78,7 @@ export default function ContactUs() {
         </div>
 
         {/* Right Section 40% */}
-        <div className="w-2/5 bg-gray-100 py-8 px-6 flex flex-col justify-center items-center">
+        <div className="lg:w-2/5 bg-gray-100 py-8 px-6 flex flex-col justify-center items-center">
           {/* Centered Heading */}
           <h1 className="text-2xl font-bold text-gray-700 mb-4">CONTACT US</h1>
 

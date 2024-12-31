@@ -1,15 +1,16 @@
-
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
+  const hasFavorites = false; // For demonstration, set this to true to show favorites
+
   return (
     // Parent Container
     <div className="max-w-screen-lg mx-auto mt-24 px-4">
       <div className="flex flex-wrap lg:flex-nowrap gap-8">
         {/* Content Wrapper */}
         <div className="flex-1">
-          {/* 1st  Delivery Section */}
+          {/* 1st Delivery Section */}
           <div className="bg-gray-100 p-4 rounded-md">
             {/**Free delivery section */}
             <span className="font-medium text-gray-800 text-sm">
@@ -37,6 +38,7 @@ export default function Home() {
           </div>
         </div>
         {/**End of 1st Part of Product Description Section */}
+        
         {/* Summary Section */}
         <div className="w-full lg:w-[350px] h-auto bg-gray-50 p-6 rounded-lg shadow-lg">
           <h1 className="font-inter font-semibold text-xl mb-6">Summary</h1>
@@ -65,21 +67,29 @@ export default function Home() {
           </button>
         </div>
       </div>
-    {/**End Of summary Section */}
+    {/**End Of Summary Section */}
+
       {/* Favorites Section */}
       <div className="w-full max-w-[1100px] mt-8 px-4">
         <h1 className="font-semibold text-base">Favourites</h1>
-        <p className="text-sm text-gray-700 mt-1">
-          There are no items saved to your favourites.
-        </p>
+        {hasFavorites ? (
+          <p className="text-sm text-gray-700 mt-1">
+            You have saved items in your favourites.
+          </p>
+        ) : (
+          <p className="text-sm text-gray-700 mt-1">
+            There are no items saved to your favourites.
+          </p>
+        )}
       </div>
       
       {/* Suggestions Section */}
       <div className="w-full max-w-[1100px] mt-6 px-4">
         <h1 className="font-semibold text-base">You Might Also Like</h1>
       </div>
-       {/**End of suggestion section */}
-      {/* 2nd part ofProduct Description Section */}
+
+      {/**End of suggestion section */}
+      {/* 2nd part of Product Description Section */}
       <div className="w-full max-w-[432px] mx-auto mt-6">
         {/* Product Image */}
         <Image
@@ -105,7 +115,7 @@ function ProductCard() {
       {/* Product Image */}
       <Image
         src="/productimg.jpg"
-        alt="Product Image"
+        alt="Nike Dri-FIT ADV TechKnit Ultra"
         width={150}
         height={150}
         className="rounded-md object-cover"
@@ -131,8 +141,7 @@ function ProductCard() {
         </div>
         {/**End of Product Description */}
       </div>
- {/**End of parent Div */}
+    {/**End of parent Div */}
     </div>
-   
   );
 }

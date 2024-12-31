@@ -1,12 +1,27 @@
 "use client";
 import { FaSortDown } from "react-icons/fa";
-import Image from 'next/image';
+import { useState } from "react";
+import Image from "next/image";
 
 export default function AllProducts() {
+  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+
   return (
-    <div className="flex bg-gray-100 min-h-screen">
+    <div className="flex flex-col md:flex-row bg-gray-100 min-h-screen">
+      {/* Sidebar Toggle for Mobile */}
+      <button
+        className="md:hidden bg-blue-600 text-white p-3 m-2 rounded"
+        onClick={() => setIsSidebarVisible(!isSidebarVisible)}
+      >
+        {isSidebarVisible ? "Hide Filters" : "Show Filters"}
+      </button>
+
       {/* Left Sidebar */}
-      <aside className="w-1/4 bg-white p-6 border-r">
+      <aside
+        className={`${
+          isSidebarVisible ? "block" : "hidden"
+        } md:block w-full md:w-1/4 bg-white p-6 border-r`}
+      >
         {/* New Section */}
         <div className="mb-6">
           <h2 className="text-xl font-semibold text-gray-800">New</h2>
@@ -18,34 +33,55 @@ export default function AllProducts() {
         {/* Collections Section */}
         <h2 className="text-xl font-semibold mb-4 text-gray-800">Collections</h2>
         <ul className="space-y-2 mb-6">
-          <li className="h-10 bg-gray-200 rounded flex items-center justify-center">Shoes</li>
-          <li className="h-10 bg-gray-200 rounded flex items-center justify-center">Jackets</li>
-          <li className="h-10 bg-gray-200 rounded flex items-center justify-center">Shirts</li>
-          <li className="h-10 bg-gray-200 rounded flex items-center justify-center">Pants</li>
-          <li className="h-10 bg-gray-200 rounded flex items-center justify-center">Accessories</li>
-          <li className="h-10 bg-gray-200 rounded flex items-center justify-center">Sweaters</li>
-          <li className="h-10 bg-gray-200 rounded flex items-center justify-center">Hats</li>
+          {["Shoes", "Jackets", "Shirts", "Pants", "Accessories", "Sweaters", "Hats"].map(
+            (item) => (
+              <li
+                key={item}
+                className="h-10 bg-gray-200 rounded flex items-center justify-center"
+              >
+                {item}
+              </li>
+            )
+          )}
         </ul>
 
         {/* Gender Section */}
         <h2 className="text-xl font-semibold mb-4 text-gray-800">Gender</h2>
         <ul className="space-y-2 mb-6">
-          <li className="h-10 bg-gray-200 rounded flex items-center justify-center">Male</li>
-          <li className="h-10 bg-gray-200 rounded flex items-center justify-center">Female</li>
+          {["Male", "Female"].map((gender) => (
+            <li
+              key={gender}
+              className="h-10 bg-gray-200 rounded flex items-center justify-center"
+            >
+              {gender}
+            </li>
+          ))}
         </ul>
 
         {/* Boys and Girls Section */}
         <h2 className="text-xl font-semibold mb-4 text-gray-800">For</h2>
         <ul className="space-y-2 mb-6">
-          <li className="h-10 bg-gray-200 rounded flex items-center justify-center">Boys</li>
-          <li className="h-10 bg-gray-200 rounded flex items-center justify-center">Girls</li>
+          {["Boys", "Girls"].map((group) => (
+            <li
+              key={group}
+              className="h-10 bg-gray-200 rounded flex items-center justify-center"
+            >
+              {group}
+            </li>
+          ))}
         </ul>
 
         {/* Sort By Section */}
         <h2 className="text-xl font-semibold mb-4 text-gray-800">Sort By</h2>
         <ul className="space-y-2">
-          <li className="h-10 bg-gray-200 rounded flex items-center justify-center">Price</li>
-          <li className="h-10 bg-gray-200 rounded flex items-center justify-center">Unit</li>
+          {["Price", "Unit"].map((sort) => (
+            <li
+              key={sort}
+              className="h-10 bg-gray-200 rounded flex items-center justify-center"
+            >
+              {sort}
+            </li>
+          ))}
         </ul>
       </aside>
 
@@ -56,19 +92,17 @@ export default function AllProducts() {
           <div className="flex space-x-4">
             <p>Hide Filter</p>
             <div>
-              {/* Filter Icon Placeholder */}
-              <Image src="/hide.png" alt="" width={24} height={24} />
+              <Image src="/hide.png" alt="Hide" width={24} height={24} />
             </div>
-            <div className="flex">
-              {/* Sort By Icon Placeholder */}
-              <p>Sort by <FaSortDown /></p>
+            <div className="flex items-center">
+              <p className="mr-1">Sort by</p> <FaSortDown />
             </div>
           </div>
         </div>
 
         {/* Product Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {Array.from({ length: 36 }).map((_, index) => (
+          {Array.from({ length: 12 }).map((_, index) => (
             <a
               key={index}
               href="/product-details"
