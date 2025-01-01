@@ -224,15 +224,16 @@ export default function Hero() {
   </div>
 </div>
     {/* Fullscreen Sneaker Image */}
-    <div className="relative w-full h-screen">
-  <Image
-    src="/image9.png" // Ensure the image is in the public folder
-    alt="Sneaker"
-    layout="fill"
-    objectFit="cover" // Ensures the image fills the entire screen
-    objectPosition="center" // Centers the image
-  />
-</div>
+    <div className="flex justify-center items-center px-4">
+        <Image
+          src="/image9.png"
+          alt="Sneaker"
+          width={1150}
+          height={700}
+          className="w-full max-w-[1150px] h-auto"
+        />
+      </div>
+
       {/* Flight Essentials Section */}
       <div className="relative bg-white py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
