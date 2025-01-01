@@ -8,7 +8,7 @@ const Signin = () => {
           {/* Logo */}
           <div className="flex justify-center pt-4">
             <Image
-              src="/Vector.png"
+              src="/nike.png"
               alt="logo"
               width={60}
               height={60}

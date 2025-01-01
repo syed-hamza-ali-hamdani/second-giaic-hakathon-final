@@ -34,7 +34,7 @@ export default function Login() {
         {/* Logo */}
         <div className="flex justify-center mb-4">
           <Image
-            src="/Vector.png"
+            src="/nike.png"
             alt="logo"
             className="h-10 w-auto"
             width={40}
