@@ -18,8 +18,8 @@ const Navbar = () => {
         {/* Navigation Links */}
         <nav className="hidden md:flex items-center space-x-6">
           <Link href="/" className="text-sm sm:text-base md:text-lg text-black">Home</Link>
-          <Link href="./products-details" className="text-sm sm:text-base md:text-lg text-black">About</Link>
-          <Link href="./all-products" className="text-sm sm:text-base md:text-lg text-black">Services</Link>
+          <Link href="./product-details" className="text-sm sm:text-base md:text-lg text-black">About</Link>
+          <Link href="./all-product" className="text-sm sm:text-base md:text-lg text-black">Services</Link>
           <Link href="./contact-us" className="text-sm sm:text-base md:text-lg text-black">Contact</Link>
         </nav>
 

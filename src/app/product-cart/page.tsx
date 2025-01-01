@@ -63,7 +63,7 @@ export default function Home() {
           </div>
           {/**Demo Button To add Member checkout */}
           <button className="mt-6 w-full px-4 py-2 bg-black text-white text-sm rounded-3xl hover:bg-gray-800">
-            Member Checkout
+         <Link href="./check-out">   Member Checkout  </Link>
           </button>
         </div>
       </div>
@@ -114,7 +114,7 @@ function ProductCard() {
     <div className="flex items-start bg-gray-200 p-4 rounded-lg shadow">
       {/* Product Image */}
       <Image
-        src="/productimg.jpg"
+        src="/Image5.png"
         alt="Nike Dri-FIT ADV TechKnit Ultra"
         width={150}
         height={150}
