@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { CiShoppingCart } from "react-icons/ci";
 
-export default function ProductDetails() {
+export default function ProductDetails(){
+  
   return (
     <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between border p-4 rounded-lg bg-white shadow-md w-[90%] mx-auto mt-4 py-6">
       {/* Left Section - Image */}
